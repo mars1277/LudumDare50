@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b34de03cce5ad9c4eaa9625f5a71e0d1
+guid: 59df48e7b95933d4e931ecd1445ac2b7
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Amatic SC
+  - Kubos
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
