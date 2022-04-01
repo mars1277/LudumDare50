@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8c9199cae88e1e14a94d65d54cbd3e89
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Barbesz.unity
+    guid: 8cc4e09ae60370a41b842b013749b69d
+  - enabled: 1
+    path: Assets/Scenes/Krisz.unity
+    guid: aeb63af82adab154ba95610af56c759c
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 64e4c32ed48b0e644bf7a87040b55dee
   m_configObjects: {}
