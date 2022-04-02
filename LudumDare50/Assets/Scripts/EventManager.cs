@@ -7,22 +7,31 @@ using TMPro;
 
 public class EventManager : MonoBehaviour
 {
+    [Header("Static Variables")]
+    public static int roundCounter = 0;
+    public static float points;
+
+    [Header("Difficulty Settings")]
     public float baseRoundTime = 10.0f;
     public int reduceRoundTimePerXRound;
     public float roundTimeReduction;
     public int increaseDifficultyPerXRound;
 
-    public static int roundCounter = 0;
+    [Header("Point Calculation Settings")]
+    public int baseRoundPoints;
+    public int minPointsAt0Secs;
+    public int difficultyAdditivePercentageBonus;
+    [Header("Code Variables")]
     public float roundTime = 10.0f;
     public bool roundEnded = true;
     public int cardsDifficulty;
-    public static float points;
-
+    [Header("GameObjects")]
     public TMP_Text roundCountText;
     public Slider roundTimerBar;
     public TMP_Text pointsText;
     public Image beastFaceImage;
     public GameObject cardsGroup;
+    [Header("Prefabs")]
     public GameObject cardGO;
 
     // Start is called before the first frame update
@@ -144,7 +153,7 @@ public class EventManager : MonoBehaviour
 
     public float CalculatePoints()
     {
-        return Mathf.Round((roundTime / baseRoundTime) * (1 + 0.1f * (cardsDifficulty - 1)) * 100);
+        return Mathf.Round(((roundTime / baseRoundTime) * (baseRoundPoints - minPointsAt0Secs) + minPointsAt0Secs) * (1 + ((float)difficultyAdditivePercentageBonus / 100.0f) * cardsDifficulty));
     }
 
     public void EndLostRound()
