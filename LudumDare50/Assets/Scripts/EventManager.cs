@@ -120,6 +120,7 @@ public class EventManager : MonoBehaviour
                 card.GetComponent<Button>().onClick.AddListener(EndLostRound);
             }
         }
+        GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().PlayCardPullingSound();
     }
 
     public int CalculateCardsDifficulty()
