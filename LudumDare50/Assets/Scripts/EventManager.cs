@@ -152,6 +152,7 @@ public class EventManager : MonoBehaviour
     {
         roundTime = 0;
         roundEnded = true;
+        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
     }
 
     public void StartNewGame()
