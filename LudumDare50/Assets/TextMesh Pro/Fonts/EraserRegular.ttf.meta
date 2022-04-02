@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59df48e7b95933d4e931ecd1445ac2b7
+guid: 4ab081b394b3ae343b26a8b08b326ebb
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Kubos
+  - Eraser
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
