@@ -32,6 +32,10 @@ public class CardSets : MonoBehaviour
 
     public CardSet GetRandomCardSetInRandomizedOrder(int roundDifficulty)
     {
+        if (roundDifficulty > cardSetGroups.cardSetGroups.Count - 1)
+        {
+            roundDifficulty = cardSetGroups.cardSetGroups.Count - 1;
+        }
         CardSetGroup cardSetGroup = cardSetGroups.cardSetGroups[roundDifficulty];
         CardSet cardSet = cardSetGroup.cardSets[Random.Range(0, cardSetGroup.cardSets.Count)];
         for (int i = 0; i < cardSet.cards.Count; i++)

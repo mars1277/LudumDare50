@@ -214,66 +214,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 909209839794085880, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_text
-      value: 8,56
-      objectReference: {fileID: 0}
-    - target: {fileID: 1307805314189572417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1307805314189572417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1307805314189572417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1307805314189572417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1521721691740088928, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1521721691740088928, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1521721691740088928, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1521721691740088928, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415786542492734726, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 4415786542492734726, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 5124220314616933986, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5124220314616933986, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5124220314616933986, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5124220314616933986, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8748494640049364186, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
       propertyPath: m_Name
       value: RoundScene
@@ -321,30 +261,6 @@ PrefabInstance:
     - target: {fileID: 8748494640049364187, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8748494640957105324, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: card1Image
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: card2Image
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: gameSceneName
-      value: Krisz
-      objectReference: {fileID: 0}
-    - target: {fileID: 8748494641717082331, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 8748494641717082331, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}

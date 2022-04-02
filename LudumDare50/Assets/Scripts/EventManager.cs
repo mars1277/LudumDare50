@@ -8,14 +8,20 @@ using TMPro;
 public class EventManager : MonoBehaviour
 {
     public string gameSceneName;
+    public float baseRoundTime = 10.0f;
+    public int reduceRoundTimePerXRound;
+    public float roundTimeReduction;
+    public int increaseDifficultyPerXRound;
 
     public int roundCounter = 0;
-    public float baseRoundTime = 10.0f;
     public float roundTime = 10.0f;
     public bool roundEnded = true;
+    public int cardsDifficulty;
+    float points;
 
     public TMP_Text roundCountText;
-    public TMP_Text roundTimeText;
+    public Slider roundTimerBar;
+    public TMP_Text pointsText;
     public Image beastFaceImage;
     public GameObject cardsGroup;
     public GameObject cardGO;
@@ -26,6 +32,8 @@ public class EventManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Krisz")
         {
             roundEnded = true;
+            points = 0;
+            pointsText.text = "" + points;
             StartFirstRound();
         }
     }
@@ -41,7 +49,7 @@ public class EventManager : MonoBehaviour
                 EndLostRound();
             } else
             {
-                roundTimeText.text = roundTime.ToString("F2");
+                roundTimerBar.value = roundTime;
             }
         }
 
@@ -55,8 +63,9 @@ public class EventManager : MonoBehaviour
         //create round
         CreateRound();
         //start round
+        roundTimerBar.maxValue = baseRoundTime;
         roundTime = baseRoundTime;
-        roundTimeText.text = roundTime.ToString("F2");
+        roundTimerBar.value = roundTime;
         roundEnded = false;
     }
 
@@ -69,8 +78,9 @@ public class EventManager : MonoBehaviour
         CreateRound();
         //start round
         baseRoundTime = CalculateNewBaseRoundTime();
+        roundTimerBar.maxValue = baseRoundTime;
         roundTime = baseRoundTime;
-        roundTimeText.text = roundTime.ToString("F2");
+        roundTimerBar.value = roundTime;
         roundEnded = false;
     }
 
@@ -83,7 +93,7 @@ public class EventManager : MonoBehaviour
             GameObject.Destroy(child.gameObject);
         }
         //get card sets based on round
-        int cardsDifficulty = 1;
+        cardsDifficulty = CalculateCardsDifficulty();
         //choose a card set from the card sets
         CardSets.CardSet cardSet = GameObject.Find("CardSets").GetComponent<CardSets>().GetRandomCardSetInRandomizedOrder(cardsDifficulty);
         //choose a card to be the face of the beast
@@ -104,24 +114,44 @@ public class EventManager : MonoBehaviour
         }
     }
 
+    public int CalculateCardsDifficulty()
+    {
+        if (roundCounter > 1 && (roundCounter - 1) % increaseDifficultyPerXRound == 0)
+        {
+            cardsDifficulty++;
+        }
+        return cardsDifficulty;
+    }
+
     public float CalculateNewBaseRoundTime()
     {
-        return baseRoundTime - 0.2f;
+        if (roundCounter > 1 && (roundCounter - 1) % reduceRoundTimePerXRound == 0)
+        {
+            return baseRoundTime - roundTimeReduction;
+        }
+        return baseRoundTime;
     }
 
     public void EndSuccessfulRound()
     {
         if (!roundEnded)
         {
+            float p = CalculatePoints();
+            points += p;
+            pointsText.text = "" + points;
             StartNewRound();
         }
+    }
+
+    public float CalculatePoints()
+    {
+        return Mathf.Round((roundTime / baseRoundTime) * (1 + 0.1f * (cardsDifficulty - 1)) * 100);
     }
 
     public void EndLostRound()
     {
         roundTime = 0;
         roundEnded = true;
-        roundTimeText.text = "You lost!";
     }
 
     public void StartNewGame()
