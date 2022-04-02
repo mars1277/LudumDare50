@@ -22,9 +22,9 @@ public class CardSets : MonoBehaviour
     {
         public List<Sprite> cards;
 
-        public Sprite GetBeastFaceCard()
+        public int GetBeastFaceId()
         {
-            return cards[Random.Range(0, cards.Count)];
+            return Random.Range(0, cards.Count);
         }
     }
 

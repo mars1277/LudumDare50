@@ -48,12 +48,13 @@ MonoBehaviour:
     cardSetGroups:
     - cardSets:
       - cards:
-        - {fileID: 21300000, guid: f00c46951d4bb8445b6cf44f20053eab, type: 3}
-        - {fileID: 21300000, guid: c7e77212d1264204388ea5d03a25ff53, type: 3}
+        - {fileID: 21300000, guid: 2eab076cc408fb84590bc730d85f7000, type: 3}
+        - {fileID: 21300000, guid: 9395e727dd768bf41bc4b6a5812658e5, type: 3}
     - cardSets:
       - cards:
-        - {fileID: 21300000, guid: 4e7f049057480174c8be6f731d38c3cd, type: 3}
-        - {fileID: 21300000, guid: 7517f4db849410e478d9510460e80ccc, type: 3}
+        - {fileID: 21300000, guid: 3631182e5d9ca7e42a5a2a055c34b3b9, type: 3}
+        - {fileID: 21300000, guid: b1d958a04c0afb64aac44298245f7246, type: 3}
+        - {fileID: 21300000, guid: 2eab076cc408fb84590bc730d85f7000, type: 3}
       - cards:
-        - {fileID: 21300000, guid: be08b419273f64142b2c1b0083392bac, type: 3}
-        - {fileID: 21300000, guid: 48cd6abe638d30b4f8b67e6d82d04c9d, type: 3}
+        - {fileID: 21300000, guid: 79a59c443a8558a47b7262ae6d1aca78, type: 3}
+        - {fileID: 21300000, guid: 5efb39a8de8fd9f4da9e8d10527ad6aa, type: 3}
