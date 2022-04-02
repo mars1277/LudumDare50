@@ -27,7 +27,7 @@ public class CardSets : MonoBehaviour
             return Random.Range(0, cards.Count);
         }
     }
-
+    public static int previousCardSetId;
     public CardSetGroups cardSetGroups;
 
     public CardSet GetRandomCardSetInRandomizedOrder(int roundDifficulty)
@@ -37,7 +37,12 @@ public class CardSets : MonoBehaviour
             roundDifficulty = cardSetGroups.cardSetGroups.Count - 1;
         }
         CardSetGroup cardSetGroup = cardSetGroups.cardSetGroups[roundDifficulty];
-        CardSet cardSet = cardSetGroup.cardSets[Random.Range(0, cardSetGroup.cardSets.Count)];
+        int randomCardSetId = Random.Range(0, cardSetGroup.cardSets.Count);
+        while (previousCardSetId == randomCardSetId)
+        {
+            randomCardSetId = Random.Range(0, cardSetGroup.cardSets.Count);
+        }
+        CardSet cardSet = cardSetGroup.cardSets[randomCardSetId];
         for (int i = 0; i < cardSet.cards.Count; i++)
         {
             Sprite temp = cardSet.cards[i];
@@ -45,6 +50,7 @@ public class CardSets : MonoBehaviour
             cardSet.cards[i] = cardSet.cards[randomIndex];
             cardSet.cards[randomIndex] = temp;
         }
+        previousCardSetId = randomCardSetId;
         return cardSet;
     }
 
