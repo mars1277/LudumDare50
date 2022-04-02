@@ -157,6 +157,6 @@ public class EventManager : MonoBehaviour
 
     public void StartNewGame()
     {
-        SceneManager.LoadScene(gameSceneName, LoadSceneMode.Single);
+        SceneManager.LoadScene("Krisz", LoadSceneMode.Single);
     }
 }

@@ -200,6 +200,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Retry
       objectReference: {fileID: 0}
+    - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2070969511}
+    - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayGame
+      objectReference: {fileID: 0}
     - target: {fileID: 1474871093833949455, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
