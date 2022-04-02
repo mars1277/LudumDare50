@@ -102,7 +102,7 @@ public class EventManager : MonoBehaviour
         for (int i = 0; i < cardSet.cards.Count; i++)
         {
             GameObject card = Instantiate(cardGO, cardsGroup.transform);
-            card.GetComponent<Image>().sprite = cardSet.cards[i];
+            card.transform.GetChild(0).GetComponent<Image>().sprite = cardSet.cards[i];
             if (i == beastFaceId)
             {
                 beastFaceImage.sprite = cardSet.cards[i];

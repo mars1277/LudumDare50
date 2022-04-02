@@ -214,6 +214,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1010416985276641881, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010416985276641881, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010416985276641881, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010416985276641881, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916545069383240463, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916545069383240463, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8748494640049364186, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
       propertyPath: m_Name
       value: RoundScene
@@ -260,6 +284,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8748494640049364187, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748494640957105324, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
