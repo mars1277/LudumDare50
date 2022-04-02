@@ -7,17 +7,16 @@ using TMPro;
 
 public class EventManager : MonoBehaviour
 {
-    public string gameSceneName;
     public float baseRoundTime = 10.0f;
     public int reduceRoundTimePerXRound;
     public float roundTimeReduction;
     public int increaseDifficultyPerXRound;
 
-    public int roundCounter = 0;
+    public static int roundCounter = 0;
     public float roundTime = 10.0f;
     public bool roundEnded = true;
     public int cardsDifficulty;
-    float points;
+    public static float points;
 
     public TMP_Text roundCountText;
     public Slider roundTimerBar;
@@ -29,7 +28,7 @@ public class EventManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Krisz")
+        if (SceneManager.GetActiveScene().name == "Game")
         {
             roundEnded = true;
             points = 0;
@@ -152,11 +151,7 @@ public class EventManager : MonoBehaviour
     {
         roundTime = 0;
         roundEnded = true;
-        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
-    }
 
-    public void StartNewGame()
-    {
-        SceneManager.LoadScene("Krisz", LoadSceneMode.Single);
+        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
     }
 }
