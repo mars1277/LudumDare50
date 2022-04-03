@@ -15,7 +15,6 @@ public class EventManager : MonoBehaviour
 
     [Header("Difficulty Settings")]
     public float baseRoundTime = 10.0f;
-    public int reduceRoundTimePerXRound;
     public float roundTimeReductionPercent;
     public int increaseDifficultyPerXRound;
     public int randomizeCardsAtDifficulty = -1;
@@ -33,6 +32,8 @@ public class EventManager : MonoBehaviour
     public int cardsDifficulty;
     public float actualMonsterSoundEffectSecs;
     public float monsterSoundEffectTimer;
+    public int reduceTimeAtThisStage = 1;
+    public int timeReductionCounter = 0;
     [Header("GameObjects")]
     public TMP_Text roundCountText;
     public Slider roundTimerBar;
@@ -112,7 +113,6 @@ public class EventManager : MonoBehaviour
         //create round
         CreateRound();
         //start round
-        baseRoundTime = CalculateNewBaseRoundTime();
         roundTimerBar.maxValue = baseRoundTime;
         roundTime = baseRoundTime;
         roundTimerBar.value = roundTime;
@@ -169,17 +169,6 @@ public class EventManager : MonoBehaviour
         return newCardsDifficulty;
     }
 
-    public float CalculateNewBaseRoundTime()
-    {
-        if (roundCounter > 1 && (roundCounter - 1) % reduceRoundTimePerXRound == 0)
-        {
-            GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().IncreaseMusicSpeed();
-
-            return baseRoundTime * ((100 - roundTimeReductionPercent) / 100f);
-        }
-        return baseRoundTime;
-    }
-
     public void EndSuccessfulRound()
     {
         if (!roundEnded)
@@ -187,7 +176,20 @@ public class EventManager : MonoBehaviour
             float p = CalculatePoints();
             points += p;
             pointsText.text = "" + points;
+            CalculateNewBaseRoundTime();
             StartNewRound();
+        }
+    }
+
+    public void CalculateNewBaseRoundTime()
+    {
+
+        timeReductionCounter++;
+        if (timeReductionCounter == reduceTimeAtThisStage)
+        {
+            reduceTimeAtThisStage++;
+            timeReductionCounter = 0;
+            baseRoundTime = baseRoundTime * ((100 - roundTimeReductionPercent) / 100f);
         }
     }
 

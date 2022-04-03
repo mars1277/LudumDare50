@@ -339,6 +339,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: roundTimeReductionPercent
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
       propertyPath: randomizeCardsAtDifficulty
       value: -1
       objectReference: {fileID: 0}
