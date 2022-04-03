@@ -11,7 +11,7 @@ public class SoundEffectManager : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     public void PlayCardPullingSound()

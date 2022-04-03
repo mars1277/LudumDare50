@@ -21,10 +21,15 @@ public class EventManager : MonoBehaviour
     public int baseRoundPoints;
     public int minPointsAt0Secs;
     public int difficultyAdditivePercentageBonus;
+    [Header("Sound Settings")]
+    public float minMonsterSoundEffectSecs;
+    public float maxMonsterSoundEffectSecs;
     [Header("Code Variables")]
     public float roundTime = 10.0f;
     public bool roundEnded = true;
     public int cardsDifficulty;
+    public float actualMonsterSoundEffectSecs;
+    public float monsterSoundEffectTimer;
     [Header("GameObjects")]
     public TMP_Text roundCountText;
     public Slider roundTimerBar;
@@ -37,6 +42,8 @@ public class EventManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        actualMonsterSoundEffectSecs = Random.Range(minMonsterSoundEffectSecs, maxMonsterSoundEffectSecs);
+        monsterSoundEffectTimer = 0;
         if (SceneManager.GetActiveScene().name == "Game")
         {
             roundEnded = true;
@@ -58,6 +65,13 @@ public class EventManager : MonoBehaviour
             } else
             {
                 roundTimerBar.value = roundTime;
+            }
+            monsterSoundEffectTimer += Time.deltaTime;
+            if (monsterSoundEffectTimer >= actualMonsterSoundEffectSecs)
+            {
+                GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().PlayRandomMonsterSound();
+                actualMonsterSoundEffectSecs = Random.Range(minMonsterSoundEffectSecs, maxMonsterSoundEffectSecs);
+                monsterSoundEffectTimer = 0;
             }
         }
 
