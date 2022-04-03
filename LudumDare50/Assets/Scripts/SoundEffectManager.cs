@@ -80,7 +80,6 @@ public class SoundEffectManager : MonoBehaviour
             randomMosterSoundId = Random.Range(0, monsterSounds.Count);
         }
         previousMonsterSoundId = randomMosterSoundId;
-        Debug.Log("monster sound id: " + randomMosterSoundId);
         monsterSounds[randomMosterSoundId].Play();
     }
 }

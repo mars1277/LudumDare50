@@ -10,6 +10,8 @@ public class EventManager : MonoBehaviour
     [Header("Static Variables")]
     public static int roundCounter = 0;
     public static float points;
+    public static List<Sprite> actualCards;
+    public static int actualBeastFaceId;
 
     [Header("Difficulty Settings")]
     public float baseRoundTime = 10.0f;
@@ -124,8 +126,10 @@ public class EventManager : MonoBehaviour
         cardsDifficulty = CalculateCardsDifficulty();
         //choose a card set from the card sets
         CardSets.CardSet cardSet = GameObject.Find("CardSets").GetComponent<CardSets>().GetRandomCardSetInRandomizedOrder(cardsDifficulty);
+        actualCards = cardSet.cards;
         //choose a card to be the face of the beast
         int beastFaceId = cardSet.GetBeastFaceId();
+        actualBeastFaceId = beastFaceId;
         //create and show cards in the game, one with win condition, one with lose one
         for (int i = 0; i < cardSet.cards.Count; i++)
         {
