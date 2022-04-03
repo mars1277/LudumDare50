@@ -1537,6 +1537,8 @@ MonoBehaviour:
   monsterSoundEffectTimer: 6
   reduceTimeAtThisStage: 1
   timeReductionCounter: 0
+  beastFaceMaxSize: 175
+  cardFaceMaxSize: 300
   roundCountText: {fileID: 8748494641717082308}
   roundTimerBar: {fileID: 1909282820375518437}
   pointsText: {fileID: 6166099707666448557}

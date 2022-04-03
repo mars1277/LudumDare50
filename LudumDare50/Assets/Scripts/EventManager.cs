@@ -35,6 +35,8 @@ public class EventManager : MonoBehaviour
     public float monsterSoundEffectTimer;
     public int reduceTimeAtThisStage = 1;
     public int timeReductionCounter = 0;
+    public int beastFaceMaxSize;
+    public int cardFaceMaxSize;
     [Header("GameObjects")]
     public TMP_Text roundCountText;
     public Slider roundTimerBar;
@@ -140,10 +142,13 @@ public class EventManager : MonoBehaviour
         for (int i = 0; i < cardSet.cards.Count; i++)
         {
             GameObject card = Instantiate(cardGO, cardsGroup.transform);
-            card.transform.GetChild(0).GetComponent<Image>().sprite = cardSet.cards[i];
+            Sprite cardFace = cardSet.cards[i];
+            SetImageSpriteSize(false, cardFace, card.transform.GetChild(0).GetComponent<Image>());
+            card.transform.GetChild(0).GetComponent<Image>().sprite = cardFace;
             if (i == beastFaceId)
             {
-                beastFaceImage.sprite = cardSet.cards[i];
+                beastFaceImage.sprite = cardFace;
+                SetImageSpriteSize(true, cardFace, beastFaceImage);
                 card.GetComponent<Button>().onClick.AddListener(EndSuccessfulRound);
             } else
             {
@@ -151,6 +156,27 @@ public class EventManager : MonoBehaviour
             }
         }
         GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().PlayCardPullingSound();
+    }
+
+    public void SetImageSpriteSize(bool isBeast, Sprite sprite, Image image)
+    {
+        int maxSize;
+        if (isBeast)
+        {
+            maxSize = beastFaceMaxSize;
+        } else
+        {
+            maxSize = cardFaceMaxSize;
+        }
+        float cardFaceSpriteWidth = sprite.rect.width;
+        float cardFaceSpriteHeight = sprite.rect.height;
+        if (cardFaceSpriteWidth > cardFaceSpriteHeight)
+        {
+            image.rectTransform.sizeDelta = new Vector2(maxSize, cardFaceSpriteHeight / cardFaceSpriteWidth * maxSize);
+        } else
+        {
+            image.rectTransform.sizeDelta = new Vector2(cardFaceSpriteWidth / cardFaceSpriteHeight * maxSize, maxSize);
+        }
     }
 
     public int CalculateCardsDifficulty()
@@ -193,16 +219,11 @@ public class EventManager : MonoBehaviour
             baseRoundTime = baseRoundTime * ((100 - roundTimeReductionPercent) / 100f);
         }
     }
-    /*
-     
-    public int difficultyAdditivePercentageBonus;
-    public int timeReductionAdditivePercentageBonus; 
-     */
+
     public float CalculatePoints()
     {
         float basePoints = minPointsAt0Secs + (roundTime / baseRoundTime) * (baseRoundPoints - minPointsAt0Secs);
         float increasedPoints = basePoints * (1 + ((float)difficultyAdditivePercentageBonus / 100.0f) * cardsDifficulty + (Power((float)timeReductionMultiplicativePercentageBonus / 100.0f + 1f, reduceTimeAtThisStage - 1) - 1f));
-        Debug.Log("kecske CalculatePoints: " + basePoints + " - " + ((float)difficultyAdditivePercentageBonus / 100.0f) * cardsDifficulty + " - " + (Power((float)timeReductionMultiplicativePercentageBonus / 100.0f + 1f, reduceTimeAtThisStage - 1) - 1f));
         return Mathf.Round(increasedPoints);
     }
 
@@ -213,7 +234,6 @@ public class EventManager : MonoBehaviour
         {
             response *= value;
         }
-        Debug.Log("kecske Power: " + value + " - " + power + " - " + response);
         return response;
     }
 
