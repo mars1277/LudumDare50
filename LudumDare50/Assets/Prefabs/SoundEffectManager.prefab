@@ -351,7 +351,7 @@ MonoBehaviour:
   music: {fileID: 3625259000750658359}
   musicSpeed: 1
   maxMusicSpeed: 2
-  increaseMusicSpeedValue: 0.01
+  increaseMusicSpeedValue: 0.005
   settingMusicSpeedToDefaultInSecs: 1
 --- !u!1 &7803326353905087961
 GameObject:
