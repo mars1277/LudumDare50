@@ -317,7 +317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7803326353531299128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 666.5024, y: 516.84827, z: -1.4509329}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -350,7 +350,8 @@ MonoBehaviour:
   - {fileID: 7803326353905087966}
   music: {fileID: 3625259000750658359}
   musicSpeed: 1
-  increaseMusicSpeedValue: 0.05
+  maxMusicSpeed: 2
+  increaseMusicSpeedValue: 0.025
   settingMusicSpeedToDefaultInSecs: 1
 --- !u!1 &7803326353905087961
 GameObject:
@@ -1036,7 +1037,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 8e1869550b2c8bf499b2bbf5cf9a690d, type: 2}
   m_audioClip: {fileID: 8300000, guid: dada01bff649a8045a09d8f8473a07b3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0

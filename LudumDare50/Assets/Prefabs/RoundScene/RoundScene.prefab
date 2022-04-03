@@ -1521,8 +1521,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseRoundTime: 10
-  reduceRoundTimePerXRound: 2
-  roundTimeReduction: 0.2
+  reduceRoundTimePerXRound: 1
+  roundTimeReductionPercent: 3
   increaseDifficultyPerXRound: 10
   baseRoundPoints: 100
   minPointsAt0Secs: 25
@@ -1540,7 +1540,7 @@ MonoBehaviour:
   beastFaceImage: {fileID: 8748494640809615142}
   cardsGroup: {fileID: 8748494640957105315}
   cardGO: {fileID: 8399611117698769177, guid: 6e7319de4fae96649926c023e4791e58, type: 3}
-  soundEffectManagerGO: {fileID: 0}
+  soundEffectManagerGO: {fileID: 7803326353531299128, guid: 711a711f43f757e4cba1bc9070660535, type: 3}
 --- !u!1 &8748494641717082330
 GameObject:
   m_ObjectHideFlags: 0

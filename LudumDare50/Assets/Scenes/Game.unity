@@ -467,11 +467,19 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: soundEffectManagerGO
+      value: 
+      objectReference: {fileID: 7803326353531299128, guid: 711a711f43f757e4cba1bc9070660535, type: 3}
+    - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
       propertyPath: maxMonsterSoundEffectSecs
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
       propertyPath: minMonsterSoundEffectSecs
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: roundTimeReductionPercent
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8748494641396833417, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}

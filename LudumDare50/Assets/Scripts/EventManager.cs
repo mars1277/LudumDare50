@@ -14,7 +14,7 @@ public class EventManager : MonoBehaviour
     [Header("Difficulty Settings")]
     public float baseRoundTime = 10.0f;
     public int reduceRoundTimePerXRound;
-    public float roundTimeReduction;
+    public float roundTimeReductionPercent;
     public int increaseDifficultyPerXRound;
 
     [Header("Point Calculation Settings")]
@@ -157,7 +157,8 @@ public class EventManager : MonoBehaviour
         if (roundCounter > 1 && (roundCounter - 1) % reduceRoundTimePerXRound == 0)
         {
             GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().IncreaseMusicSpeed();
-            return baseRoundTime - roundTimeReduction;
+
+            return baseRoundTime * ((100 - roundTimeReductionPercent) / 100f);
         }
         return baseRoundTime;
     }
