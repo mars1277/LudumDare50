@@ -18,6 +18,7 @@ public class EventManager : MonoBehaviour
     public int reduceRoundTimePerXRound;
     public float roundTimeReductionPercent;
     public int increaseDifficultyPerXRound;
+    public int randomizeCardsAtDifficulty = -1;
 
     [Header("Point Calculation Settings")]
     public int baseRoundPoints;
@@ -58,6 +59,10 @@ public class EventManager : MonoBehaviour
             points = 0;
             pointsText.text = "" + points;
             StartFirstRound();
+            if (randomizeCardsAtDifficulty == -1)
+            {
+                randomizeCardsAtDifficulty = GameObject.Find("CardSets").GetComponent<CardSets>().cardSetGroups.cardSetGroups.Count;
+            }
         }
     }
 
@@ -123,9 +128,9 @@ public class EventManager : MonoBehaviour
             GameObject.Destroy(child.gameObject);
         }
         //get card sets based on round
-        cardsDifficulty = CalculateCardsDifficulty();
+        int newCardsDifficulty = CalculateCardsDifficulty();
         //choose a card set from the card sets
-        CardSets.CardSet cardSet = GameObject.Find("CardSets").GetComponent<CardSets>().GetRandomCardSetInRandomizedOrder(cardsDifficulty);
+        CardSets.CardSet cardSet = GameObject.Find("CardSets").GetComponent<CardSets>().GetRandomCardSetInRandomizedOrder(newCardsDifficulty);
         actualCards = cardSet.cards;
         //choose a card to be the face of the beast
         int beastFaceId = cardSet.GetBeastFaceId();
@@ -149,11 +154,19 @@ public class EventManager : MonoBehaviour
 
     public int CalculateCardsDifficulty()
     {
-        if (roundCounter > 1 && (roundCounter - 1) % increaseDifficultyPerXRound == 0)
+        bool randomizeDifficulty = cardsDifficulty + 1 >= randomizeCardsAtDifficulty;
+        int newCardsDifficulty = 0;
+        if (randomizeDifficulty) {
+            newCardsDifficulty = Random.Range(0, randomizeCardsAtDifficulty);
+        } else
         {
-            cardsDifficulty++;
+            if (roundCounter > 1 && (roundCounter - 1) % increaseDifficultyPerXRound == 0)
+            {
+                cardsDifficulty++;
+                newCardsDifficulty = cardsDifficulty;
+            }
         }
-        return cardsDifficulty;
+        return newCardsDifficulty;
     }
 
     public float CalculateNewBaseRoundTime()
