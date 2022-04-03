@@ -58,11 +58,11 @@ public class EventManager : MonoBehaviour
             roundEnded = true;
             points = 0;
             pointsText.text = "" + points;
-            StartFirstRound();
             if (randomizeCardsAtDifficulty == -1)
             {
                 randomizeCardsAtDifficulty = GameObject.Find("CardSets").GetComponent<CardSets>().cardSetGroups.cardSetGroups.Count;
             }
+            StartFirstRound();
         }
     }
 
@@ -154,7 +154,7 @@ public class EventManager : MonoBehaviour
 
     public int CalculateCardsDifficulty()
     {
-        bool randomizeDifficulty = cardsDifficulty + 1 >= randomizeCardsAtDifficulty;
+        bool randomizeDifficulty = cardsDifficulty >= randomizeCardsAtDifficulty;
         int newCardsDifficulty = 0;
         if (randomizeDifficulty) {
             newCardsDifficulty = Random.Range(0, randomizeCardsAtDifficulty);
@@ -163,8 +163,8 @@ public class EventManager : MonoBehaviour
             if (roundCounter > 1 && (roundCounter - 1) % increaseDifficultyPerXRound == 0)
             {
                 cardsDifficulty++;
-                newCardsDifficulty = cardsDifficulty;
             }
+            newCardsDifficulty = cardsDifficulty;
         }
         return newCardsDifficulty;
     }

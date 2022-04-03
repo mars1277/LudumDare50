@@ -51,6 +51,7 @@ public class CardSets : MonoBehaviour
             cardSet.cards[randomIndex] = temp;
         }
         previousCardSetId = randomCardSetId;
+        Debug.Log("kecske " + roundDifficulty + " - " + randomCardSetId);
         return cardSet;
     }
 
