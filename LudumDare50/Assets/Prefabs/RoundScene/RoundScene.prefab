@@ -1525,8 +1525,9 @@ MonoBehaviour:
   increaseDifficultyPerXRound: 10
   randomizeCardsAtDifficulty: -1
   baseRoundPoints: 100
-  minPointsAt0Secs: 25
-  difficultyAdditivePercentageBonus: 10
+  minPointsAt0Secs: 50
+  difficultyAdditivePercentageBonus: 20
+  timeReductionAdditivePercentageBonus: 10
   minMonsterSoundEffectSecs: 3
   maxMonsterSoundEffectSecs: 6
   roundTime: 10

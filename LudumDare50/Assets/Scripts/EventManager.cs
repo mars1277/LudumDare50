@@ -23,6 +23,7 @@ public class EventManager : MonoBehaviour
     public int baseRoundPoints;
     public int minPointsAt0Secs;
     public int difficultyAdditivePercentageBonus;
+    public int timeReductionAdditivePercentageBonus;
     [Header("Sound Settings")]
     public float minMonsterSoundEffectSecs;
     public float maxMonsterSoundEffectSecs;
@@ -192,10 +193,17 @@ public class EventManager : MonoBehaviour
             baseRoundTime = baseRoundTime * ((100 - roundTimeReductionPercent) / 100f);
         }
     }
-
+    /*
+     
+    public int difficultyAdditivePercentageBonus;
+    public int timeReductionAdditivePercentageBonus; 
+     */
     public float CalculatePoints()
     {
-        return Mathf.Round(((roundTime / baseRoundTime) * (baseRoundPoints - minPointsAt0Secs) + minPointsAt0Secs) * (1 + ((float)difficultyAdditivePercentageBonus / 100.0f) * cardsDifficulty));
+        float basePoints = minPointsAt0Secs + (roundTime / baseRoundTime) * (baseRoundPoints - minPointsAt0Secs);
+        float increasedPoints = basePoints * (1 + ((float)difficultyAdditivePercentageBonus / 100.0f) * cardsDifficulty + ((float)timeReductionAdditivePercentageBonus / 100.0f) * (reduceTimeAtThisStage - 1));
+        Debug.Log(increasedPoints);
+        return Mathf.Round(increasedPoints);
     }
 
     public void EndLostRound()
