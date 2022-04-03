@@ -146,6 +146,214 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[0].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[1].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[2].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[3].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[4].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[5].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[6].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[7].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[8].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[9].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[10].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[11].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[12].cards.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[0].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2128598a3bf676b488754c6572d0c2a0, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[0].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: b5dbf9a4f0825194ead94d1bff871ce9, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[1].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4d7054f51b9cf7f478d8b4402e0b6ca1, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[1].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 278e65538a2988044ab6486985cb93d8, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[2].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: d88a41d1745ed6040bc9cef7f0518298, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[2].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: e9683830f8a86674bb86976fc2112f63, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[3].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ce4272f0ce7a78a4d9fdd20b63e0c22c, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[3].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ed65cdead5f56e47bee0bb502878c57, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[4].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: eb4c0fcc1bcf74647b949cd78fc0a426, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[4].cardSets.Array.data[4].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: a97ab663d40321e4496116387e1b9c82, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[0].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: c7296753a9d1e884389366d218b8a973, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[0].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5171029c5e9c0a3438de62f9e4e887b9, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[1].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 20a1329e8fa84dd469208aeec45abc4d, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[1].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: c7b31dee2949da0478bd8d8be3d192b7, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[2].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 92272287ebbe5e04fb970aa76463f44d, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[2].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: c594f69151c50bb41a315ee4118bd451, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[3].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: e509c9f8936390c40a187ccaf60b16a4, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[3].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: cffb20c71cdde494c87379840b759382, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[4].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ba9e9432299355243ba69a80a0b56d98, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[4].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: ab93400a12bbb4642b73feb38f6c91da, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[5].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0989d58323d8f104cbb98cd4de2d8ca0, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[5].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: d57fbfbd6394e6f4095880c9d6fd0077, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[6].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4bb1e08ec0483294a8a39f02e6406cce, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[6].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8483326d870c5c6449be6ffac9c74954, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[7].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ad7eab1b510098049b08ee8df65b9d47, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[7].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 503235c773467d74eb2d1004af0a093c, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[8].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 74117a47fb52dd94fb9be12217978bd5, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[8].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6454c1d29fa3fe74fbcdb5fbf0b9b678, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[9].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2128598a3bf676b488754c6572d0c2a0, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[9].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: b5dbf9a4f0825194ead94d1bff871ce9, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[10].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 4d7054f51b9cf7f478d8b4402e0b6ca1, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[10].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 278e65538a2988044ab6486985cb93d8, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[11].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: d88a41d1745ed6040bc9cef7f0518298, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[11].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: e9683830f8a86674bb86976fc2112f63, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[12].cards.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ce4272f0ce7a78a4d9fdd20b63e0c22c, type: 3}
+    - target: {fileID: 3878091359024163289, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
+      propertyPath: cardSetGroups.cardSetGroups.Array.data[5].cardSets.Array.data[12].cards.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ed65cdead5f56e47bee0bb502878c57, type: 3}
     - target: {fileID: 3916545069383240463, guid: ec8ab07ca4f08ca40a129f49338f7992, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
