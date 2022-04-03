@@ -652,6 +652,10 @@ PrefabInstance:
       propertyPath: musicSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7803326353531299129, guid: 711a711f43f757e4cba1bc9070660535, type: 3}
+      propertyPath: increaseMusicSpeedValue
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 7803326353531299134, guid: 711a711f43f757e4cba1bc9070660535, type: 3}
       propertyPath: m_RootOrder
       value: 3
