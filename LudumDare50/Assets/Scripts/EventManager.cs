@@ -23,7 +23,7 @@ public class EventManager : MonoBehaviour
     public int baseRoundPoints;
     public int minPointsAt0Secs;
     public int difficultyAdditivePercentageBonus;
-    public int timeReductionAdditivePercentageBonus;
+    public int timeReductionMultiplicativePercentageBonus;
     [Header("Sound Settings")]
     public float minMonsterSoundEffectSecs;
     public float maxMonsterSoundEffectSecs;
@@ -201,9 +201,20 @@ public class EventManager : MonoBehaviour
     public float CalculatePoints()
     {
         float basePoints = minPointsAt0Secs + (roundTime / baseRoundTime) * (baseRoundPoints - minPointsAt0Secs);
-        float increasedPoints = basePoints * (1 + ((float)difficultyAdditivePercentageBonus / 100.0f) * cardsDifficulty + ((float)timeReductionAdditivePercentageBonus / 100.0f) * (reduceTimeAtThisStage - 1));
-        Debug.Log(increasedPoints);
+        float increasedPoints = basePoints * (1 + ((float)difficultyAdditivePercentageBonus / 100.0f) * cardsDifficulty + (Power((float)timeReductionMultiplicativePercentageBonus / 100.0f + 1f, reduceTimeAtThisStage - 1) - 1f));
+        Debug.Log("kecske CalculatePoints: " + basePoints + " - " + ((float)difficultyAdditivePercentageBonus / 100.0f) * cardsDifficulty + " - " + (Power((float)timeReductionMultiplicativePercentageBonus / 100.0f + 1f, reduceTimeAtThisStage - 1) - 1f));
         return Mathf.Round(increasedPoints);
+    }
+
+    float Power(float value, int power)
+    {
+        float response = 1f;
+        for(int i = 0; i < power; i++)
+        {
+            response *= value;
+        }
+        Debug.Log("kecske Power: " + value + " - " + power + " - " + response);
+        return response;
     }
 
     public void EndLostRound()
