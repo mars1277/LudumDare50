@@ -1524,11 +1524,11 @@ MonoBehaviour:
   reduceRoundTimePerXRound: 2
   roundTimeReduction: 0.2
   increaseDifficultyPerXRound: 10
-  baseRoundPoints: 0
-  minPointsAt0Secs: 0
-  difficultyAdditivePercentageBonus: 0
-  minMonsterSoundEffectSecs: 0
-  maxMonsterSoundEffectSecs: 0
+  baseRoundPoints: 100
+  minPointsAt0Secs: 25
+  difficultyAdditivePercentageBonus: 10
+  minMonsterSoundEffectSecs: 3
+  maxMonsterSoundEffectSecs: 6
   roundTime: 10
   roundEnded: 1
   cardsDifficulty: 0
@@ -1540,6 +1540,7 @@ MonoBehaviour:
   beastFaceImage: {fileID: 8748494640809615142}
   cardsGroup: {fileID: 8748494640957105315}
   cardGO: {fileID: 8399611117698769177, guid: 6e7319de4fae96649926c023e4791e58, type: 3}
+  soundEffectManagerGO: {fileID: 0}
 --- !u!1 &8748494641717082330
 GameObject:
   m_ObjectHideFlags: 0

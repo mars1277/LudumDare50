@@ -38,10 +38,16 @@ public class EventManager : MonoBehaviour
     public GameObject cardsGroup;
     [Header("Prefabs")]
     public GameObject cardGO;
+    public GameObject soundEffectManagerGO;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (GameObject.Find("SoundEffectManager") == null)
+        {
+            GameObject soundEffectManager = Instantiate(soundEffectManagerGO);
+            soundEffectManager.name = soundEffectManager.name.Substring(0, soundEffectManager.name.Length - 7);
+        }
         actualMonsterSoundEffectSecs = Random.Range(minMonsterSoundEffectSecs, maxMonsterSoundEffectSecs);
         monsterSoundEffectTimer = 0;
         if (SceneManager.GetActiveScene().name == "Game")
@@ -150,6 +156,7 @@ public class EventManager : MonoBehaviour
     {
         if (roundCounter > 1 && (roundCounter - 1) % reduceRoundTimePerXRound == 0)
         {
+            GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().IncreaseMusicSpeed();
             return baseRoundTime - roundTimeReduction;
         }
         return baseRoundTime;
@@ -175,6 +182,7 @@ public class EventManager : MonoBehaviour
     {
         roundTime = 0;
         roundEnded = true;
+        GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().SetMusicSpeedToDefault();
 
         SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
     }

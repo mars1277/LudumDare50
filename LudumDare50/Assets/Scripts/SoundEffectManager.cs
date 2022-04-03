@@ -4,14 +4,67 @@ using UnityEngine;
 
 public class SoundEffectManager : MonoBehaviour
 {
+    public AudioSource introMonsterSound;
+
     public AudioSource cardPulling;
 
     public List<AudioSource> monsterSounds;
     int previousMonsterSoundId;
 
+    public AudioSource music;
+    public float musicSpeed = 1f;
+    public float maxMusicSpeed = 2f;
+    public float increaseMusicSpeedValue;
+    public float settingMusicSpeedToDefaultInSecs = 1f;
+
     void Start()
     {
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
+    }
+
+    void Update()
+    {
+        music.pitch = musicSpeed;
+        music.outputAudioMixerGroup.audioMixer.SetFloat("PitchShifter", 1f / musicSpeed);
+    }
+
+    public void PlayMusic()
+    {
+        music.Play();
+    }
+
+    public void IncreaseMusicSpeed()
+    {
+        if (musicSpeed < maxMusicSpeed)
+        {
+            musicSpeed += increaseMusicSpeedValue;
+        }
+    }
+
+    public void SetMusicSpeedToDefault()
+    {
+        StartCoroutine(SetSpeedToDefault());
+    }
+
+    IEnumerator SetSpeedToDefault()
+    {
+        int ticks = 100;
+        float musicSpeedReduction = musicSpeed - 1f;
+        for (int i = 0; i < ticks; i++)
+        {
+            yield return new WaitForSeconds(settingMusicSpeedToDefaultInSecs / (float)ticks);
+            musicSpeed -= musicSpeedReduction / (float)ticks;
+        }
+    }
+
+    public void PlayIntroMonsterSound()
+    {
+        introMonsterSound.Play();
+    }
+
+    public void StopIntroMonsterSound()
+    {
+        introMonsterSound.Stop();
     }
 
     public void PlayCardPullingSound()

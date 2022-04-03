@@ -10,15 +10,16 @@ public class MainMenu : MonoBehaviour
       SceneManager.LoadScene("Intro");
     }
 
-public void QuitGame ()
-{
-  Debug.Log("Quit");
-  Application.Quit();
-}
+    public void QuitGame ()
+    {
+      Debug.Log("Quit");
+      Application.Quit();
+    }
 
-public void NextScene()
-{
-  SceneManager.LoadScene("Game");
-}
+    public void NextScene()
+    {
+        GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().StopIntroMonsterSound();
+        SceneManager.LoadScene("Game");
+    }
 
 }
