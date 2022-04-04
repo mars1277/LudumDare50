@@ -22,4 +22,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void LeaderBoard()
+    {
+      SceneManager.LoadScene("LeaderBoard");
+    }
+
 }
