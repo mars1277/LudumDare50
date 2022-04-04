@@ -379,6 +379,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 395323766}
     m_Modifications:
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3964401735047760512, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_Name
       value: ScoreLine (5)
@@ -426,6 +442,22 @@ PrefabInstance:
     - target: {fileID: 3964401735047760513, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
@@ -516,6 +548,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 395323766}
     m_Modifications:
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3964401735047760512, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_Name
       value: ScoreLine (2)
@@ -564,6 +612,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
 --- !u!4 &404834395 stripped
@@ -611,6 +675,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 395323766}
     m_Modifications:
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3964401735047760512, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_Name
       value: ScoreLine (3)
@@ -658,6 +738,22 @@ PrefabInstance:
     - target: {fileID: 3964401735047760513, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
@@ -1515,6 +1611,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 395323766}
     m_Modifications:
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3964401735047760512, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_Name
       value: ScoreLine (1)
@@ -1562,6 +1674,22 @@ PrefabInstance:
     - target: {fileID: 3964401735047760513, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
@@ -1715,6 +1843,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 395323766}
     m_Modifications:
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3964401735047760512, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_Name
       value: ScoreLine (4)
@@ -1763,6 +1907,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
 --- !u!4 &1430670833 stripped
@@ -1810,6 +1970,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 395323766}
     m_Modifications:
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3964401735047760512, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_Name
       value: ScoreLine (6)
@@ -1858,6 +2034,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
 --- !u!4 &1930305399 stripped
@@ -1905,6 +2097,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 395323766}
     m_Modifications:
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3964401735047760512, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_Name
       value: ScoreLine (7)
@@ -1952,6 +2160,22 @@ PrefabInstance:
     - target: {fileID: 3964401735047760513, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
@@ -2214,6 +2438,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 395323766}
     m_Modifications:
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401734780439351, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3964401735047760512, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_Name
       value: ScoreLine
@@ -2261,6 +2501,22 @@ PrefabInstance:
     - target: {fileID: 3964401735047760513, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3964401735086463804, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5fde1dc73f44d48ae7e63424d3cf79, type: 3}
