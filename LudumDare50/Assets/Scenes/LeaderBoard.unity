@@ -808,7 +808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -821,7 +821,7 @@ PrefabInstance:
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 7803326353531299129, guid: 711a711f43f757e4cba1bc9070660535, type: 3}
+      objectReference: {fileID: 1045096894}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -832,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: QuitGame
       objectReference: {fileID: 0}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -1507,7 +1507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -1520,7 +1520,7 @@ PrefabInstance:
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 7803326353531299129, guid: 711a711f43f757e4cba1bc9070660535, type: 3}
+      objectReference: {fileID: 1045096894}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -1531,7 +1531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Click
+      value: PlayGame
       objectReference: {fileID: 0}
     - target: {fileID: 1474871093833949454, guid: 4fce0fed3cb2bd548afe0d47308830c1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName

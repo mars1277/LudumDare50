@@ -477,7 +477,7 @@ MonoBehaviour:
   - {fileID: 7803326355046769719}
   - {fileID: 7803326353415064731}
   - {fileID: 7803326353905087966}
-  click: {fileID: 0}
+  click: {fileID: 3955536783986650169}
   music: {fileID: 3625259000750658359}
   musicSpeed: 1
   maxMusicSpeed: 2

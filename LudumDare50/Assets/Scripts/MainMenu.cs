@@ -33,13 +33,15 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-      SceneManager.LoadScene("Intro");
+        GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().Click();
+        SceneManager.LoadScene("Intro");
     }
 
-    public void QuitGame ()
+    public void QuitGame()
     {
-      Debug.Log("Quit");
-      Application.Quit();
+        Debug.Log("Quit");
+        GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().Click();
+        Application.Quit();
     }
 
     public void NextScene()
@@ -52,7 +54,8 @@ public class MainMenu : MonoBehaviour
 
     public void LeaderBoard()
     {
-      SceneManager.LoadScene("LeaderBoard");
+        GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().Click();
+        SceneManager.LoadScene("LeaderBoard");
     }
 
 }
