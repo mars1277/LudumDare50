@@ -16,6 +16,7 @@ public class EventManager : MonoBehaviour
     [Header("Difficulty Settings")]
     public float baseRoundTime = 10.0f;
     public float roundTimeReductionPercent;
+    public int maxTimerReductionsCount;
     public int increaseDifficultyPerXRound;
     public int randomizeCardsAtDifficulty = -1;
 
@@ -210,13 +211,21 @@ public class EventManager : MonoBehaviour
 
     public void CalculateNewBaseRoundTime()
     {
-
-        timeReductionCounter++;
-        if (timeReductionCounter == reduceTimeAtThisStage)
+        if (maxTimerReductionsCount >= reduceTimeAtThisStage)
         {
-            reduceTimeAtThisStage++;
-            timeReductionCounter = 0;
-            baseRoundTime = baseRoundTime * ((100 - roundTimeReductionPercent) / 100f);
+            timeReductionCounter++;
+            if (timeReductionCounter == reduceTimeAtThisStage)
+            {
+                reduceTimeAtThisStage++;
+                timeReductionCounter = 0;
+                baseRoundTime = baseRoundTime * ((100 - roundTimeReductionPercent) / 100f);
+            }
+        } else
+        {
+            if (roundCounter == 100)
+            {
+                baseRoundTime = baseRoundTime * ((100 - roundTimeReductionPercent) / 100f);
+            }
         }
     }
 
