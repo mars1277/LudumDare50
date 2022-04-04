@@ -15,6 +15,7 @@ public class LeaderBoardManager : MonoBehaviour
 
     public List<HighScore> highScores;
 
+    public List<TMP_Text> placements;
     public List<TMP_Text> names;
     public List<TMP_Text> scores;
     public List<TMP_Text> rounds;
@@ -45,6 +46,7 @@ public class LeaderBoardManager : MonoBehaviour
             rounds[counter].text = "" + highScore.Round;
             if (NewestHighScoreIndex == counter + 1)
             {
+                placements[counter].color = new Color32(202, 255, 1, 255);
                 names[counter].color = new Color32(202, 255, 1, 255);
                 scores[counter].color = new Color32(202, 255, 1, 255);
                 rounds[counter].color = new Color32(202, 255, 1, 255);
