@@ -2,11 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
+    public TMP_InputField playerName;
+
     void Start()
     {
+        if (!PlayerPrefs.HasKey(LeaderBoardManager.PlayerName))
+        {
+            PlayerPrefs.SetString(LeaderBoardManager.PlayerName, "");
+        }
         for (int i = 1; i <= LeaderBoardManager.MaxLeaderBoardSlotSaved; i++)
         {
             if (!PlayerPrefs.HasKey(LeaderBoardManager.SlotNamePrefix + i))
@@ -37,6 +44,7 @@ public class MainMenu : MonoBehaviour
 
     public void NextScene()
     {
+        PlayerPrefs.SetString(LeaderBoardManager.PlayerName, playerName.text);
         GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().StopIntroMonsterSound();
         SceneManager.LoadScene("Game");
     }

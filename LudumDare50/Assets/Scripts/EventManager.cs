@@ -9,7 +9,7 @@ public class EventManager : MonoBehaviour
 {
     [Header("Static Variables")]
     public static int roundCounter = 0;
-    public static float points;
+    public static int points;
     public static List<Sprite> actualCards;
     public static int actualBeastFaceId;
 
@@ -201,7 +201,7 @@ public class EventManager : MonoBehaviour
     {
         if (!roundEnded)
         {
-            float p = CalculatePoints();
+            int p = CalculatePoints();
             points += p;
             pointsText.text = "" + points;
             CalculateNewBaseRoundTime();
@@ -229,11 +229,11 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    public float CalculatePoints()
+    public int CalculatePoints()
     {
         float basePoints = minPointsAt0Secs + (roundTime / baseRoundTime) * (baseRoundPoints - minPointsAt0Secs);
         float increasedPoints = basePoints * (1 + ((float)difficultyAdditivePercentageBonus / 100.0f) * cardsDifficulty + (Power((float)timeReductionMultiplicativePercentageBonus / 100.0f + 1f, reduceTimeAtThisStage - 1) - 1f));
-        return Mathf.Round(increasedPoints);
+        return Mathf.RoundToInt(increasedPoints);
     }
 
     float Power(float value, int power)

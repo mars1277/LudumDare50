@@ -18,6 +18,10 @@ public class GameOverManager : MonoBehaviour
     public int beastFaceMaxSize;
     public int cardFaceMaxSize;
 
+    public string highScoreMessage;
+    public string notHighScoreMessage;
+    public TMP_Text resultMessage;
+
     void Start()
     {
         pointsText.text = "" + EventManager.points;
@@ -36,6 +40,16 @@ public class GameOverManager : MonoBehaviour
         {
             optionFaces[i].sprite = EventManager.actualCards[i];
             SetImageSpriteSize(false, EventManager.actualCards[i], optionFaces[i]);
+        }
+
+        bool isNewHighScore = LeaderBoardManager.MadeItToTheLeaderBoardAndIfSoSaveIt(EventManager.points, EventManager.roundCounter);
+        if (isNewHighScore)
+        {
+            resultMessage.text = highScoreMessage;
+        }
+        else
+        {
+            resultMessage.text = notHighScoreMessage;
         }
     }
 

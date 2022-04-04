@@ -1132,6 +1132,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4918180907582105605, guid: 47eb7650d5086a7478f8209791e18cd8, type: 3}
   m_PrefabInstance: {fileID: 753709359}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &753709361 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4918180907582105604, guid: 47eb7650d5086a7478f8209791e18cd8, type: 3}
+  m_PrefabInstance: {fileID: 753709359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &766822627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2132,6 +2143,9 @@ MonoBehaviour:
   wrongChoiceFrame: {fileID: 21300000, guid: 5180abf80bcd4894a805903247a70de8, type: 3}
   beastFaceMaxSize: 80
   cardFaceMaxSize: 172
+  highScoreMessage: New high score!
+  notHighScoreMessage: C'mon, you can do better than this!
+  resultMessage: {fileID: 753709361}
 --- !u!4 &1776112975
 Transform:
   m_ObjectHideFlags: 0
@@ -2304,6 +2318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fadb79fea94bf9b4897278f54edc09dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: {fileID: 0}
 --- !u!1 &2122148390
 GameObject:
   m_ObjectHideFlags: 0
