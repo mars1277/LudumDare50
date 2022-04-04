@@ -11,6 +11,8 @@ public class SoundEffectManager : MonoBehaviour
     public List<AudioSource> monsterSounds;
     int previousMonsterSoundId;
 
+    public AudioSource click;
+
     public AudioSource music;
     public float musicSpeed = 1f;
     public float maxMusicSpeed = 2f;
@@ -70,6 +72,11 @@ public class SoundEffectManager : MonoBehaviour
     public void PlayCardPullingSound()
     {
         cardPulling.Play();
+    }
+
+    public void Click()
+    {
+      click.Play();
     }
 
     public void PlayRandomMonsterSound()
