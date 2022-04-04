@@ -45,6 +45,7 @@ public class MainMenu : MonoBehaviour
     public void NextScene()
     {
         PlayerPrefs.SetString(LeaderBoardManager.PlayerName, playerName.text);
+        LeaderBoardManager.NewestHighScoreIndex = -1;
         GameObject.Find("SoundEffectManager").GetComponent<SoundEffectManager>().StopIntroMonsterSound();
         SceneManager.LoadScene("Game");
     }

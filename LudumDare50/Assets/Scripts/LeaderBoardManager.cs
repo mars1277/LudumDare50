@@ -11,6 +11,7 @@ public class LeaderBoardManager : MonoBehaviour
     public static string SlotNamePrefix = "Slot_Name_";
     public static string SlotScorePrefix = "Slot_Score_";
     public static string SlotRoundPrefix = "Slot_Round_";
+    public static int NewestHighScoreIndex;
 
     public List<HighScore> highScores;
 
@@ -42,6 +43,12 @@ public class LeaderBoardManager : MonoBehaviour
             names[counter].text = highScore.Name;
             scores[counter].text = "" + highScore.Score;
             rounds[counter].text = "" + highScore.Round;
+            if (NewestHighScoreIndex == counter + 1)
+            {
+                names[counter].color = new Color32(202, 255, 1, 255);
+                scores[counter].color = new Color32(202, 255, 1, 255);
+                rounds[counter].color = new Color32(202, 255, 1, 255);
+            }
             counter++;
         }
     }
@@ -83,6 +90,7 @@ public class LeaderBoardManager : MonoBehaviour
             if (!inserted && (highScore.Score < score || highScore.Score == score && highScore.Round > round))
             {
                 SaveHighScore(counter, name, score, round);
+                NewestHighScoreIndex = counter;
                 inserted = true;
                 counter++;
                 if (counter > MaxLeaderBoardSlotSaved)
